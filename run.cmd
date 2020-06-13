@@ -1,0 +1,1 @@
+docker run --rm -it --name my-addon-container -v %cd%:/addon dolphinspired/wow-addon-container
