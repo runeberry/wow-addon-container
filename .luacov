@@ -1,0 +1,22 @@
+return {
+  -- This will output the stats and report files to a 'luacov' directory.
+  -- The Makefile ensures that this directory exists before generating these files.
+  statsfile = 'luacov/luacov.stats.out',
+  reportfile = 'luacov/luacov.report.out',
+
+  -- Patterns for files to include when reporting
+  -- all will be included if nothing is listed
+  -- (exclude overrules include, do not include
+  -- the .lua extension)
+  include = {
+
+  },
+
+  -- Patterns for files to exclude when reporting
+  -- all will be included if nothing is listed
+  -- (exclude overrules include, do not include
+  -- the .lua extension)
+  exclude = {
+
+  },
+}
