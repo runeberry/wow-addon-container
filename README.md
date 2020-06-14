@@ -2,9 +2,11 @@
 
 This Docker image provides an environment suitable for running Lua unit tests and code coverage tools for a World of Warcraft addon. Even if you have no experience at all with Docker, you can have a Lua environment up and running for your addon code in 30 minutes or less!
 
+See the latest version tags on [Docker Hub](https://hub.docker.com/repository/docker/dolphinspired/wow-addon-container).
+
 ## What's in the box?
 
-This image is built on the base container [woahbase/alpine-lua](https://hub.docker.com/r/woahbase/alpine-lua) which is a lightweight Linux installation with Lua and LuaRocks installed. I've added all the utilities necessary for downloading and installing rocks (Lua modules), as well as `make` so you can include Makefiles with your project. The following rocks are included with this image:
+This image is built on the base container [woahbase/alpine-lua](https://hub.docker.com/r/woahbase/alpine-lua) which is a lightweight Linux installation with Lua 5.1.5 and LuaRocks installed. I've added all the utilities necessary for downloading and installing rocks (Lua modules), as well as `make` so you can include Makefiles with your project. The following rocks are included with this image:
 
 * **busted** - for running unit tests
 * **luacov** - for generating code coverage info
