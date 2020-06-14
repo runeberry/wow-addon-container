@@ -11,7 +11,7 @@ test:
 
 test-coverage: coverage-setup
 	busted --coverage
-	luacov-console ./src
+	luacov-console
 	luacov-console --summary
 
 test-report: coverage-setup
