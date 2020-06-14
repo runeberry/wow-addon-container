@@ -8,10 +8,11 @@ See the latest version tags on [Docker Hub](https://hub.docker.com/repository/do
 
 This image is built on the base container [woahbase/alpine-lua](https://hub.docker.com/r/woahbase/alpine-lua) which is a lightweight Linux installation with Lua 5.1.5 and LuaRocks installed. I've added all the utilities necessary for downloading and installing rocks (Lua modules), as well as `make` so you can include Makefiles with your project. The following rocks are included with this image:
 
-* **busted** - for running unit tests
-* **luacov** - for generating code coverage info
-* **luacov-console** - for writing code coverage results to console
-* **luacov-reporter-lcov** - for creating a report that can be turned into detailed HTML output
+* [**busted**](https://github.com/Olivine-Labs/busted) - for running unit tests
+* [**luacov**](https://keplerproject.github.io/luacov/) - for generating code coverage info
+* [**luacov-console**](https://github.com/spacewander/luacov-console) - for writing code coverage results to console
+* [**luacov-reporter-lcov**](https://github.com/daurnimator/luacov-reporter-lcov) - for creating a report that can be turned into detailed HTML output
+* [**luabitop**](https://luarocks.org/modules/luarocks/luabitop) - for bitwise operations on numbers in Lua < 5.3
 
 The container is about 250 MB. It could be made smaller - if anyone wants to take a stab at that, feel free to submit a PR!
 
