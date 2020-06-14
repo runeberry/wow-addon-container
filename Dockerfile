@@ -17,4 +17,5 @@ RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/test
 RUN luarocks install busted && \
     luarocks install luacov && \
     luarocks install luacov-reporter-lcov && \
-    luarocks install luacov-console
+    luarocks install luacov-console && \
+    luarocks install luabitop
