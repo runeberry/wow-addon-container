@@ -32,7 +32,7 @@ The container is about 250 MB. It could be made smaller - if anyone wants to tak
 4. Open a terminal / command prompt. Verify your installation with the following command: `docker version`. You should see some version information in the console.
 5. Right click the Docker icon in your System Tray and open Settings. Review the following settings:
     * **Shared Drives**<br/>
-      You **must** give Docker access to the drive where your WoW addon code and unit tests are stored in order to run them as outlined in the following instructions.
+      On some versions of Docker, you **must** give Docker access to the drive where your WoW addon code and unit tests are stored in order to run them as outlined in the following instructions. Newer versions may have eliminated this setting and can access your drives by default.
     * **General > Automatically check for updates**<br/>
       If you're only using Docker for this one image, you may not be worried about always checking for updates. Turn this off if you'd like.
     * **General > Start Docker Desktop when you log in**<br/>
